@@ -392,62 +392,75 @@ https://www.tooplate.com/view/2120-ben-resume
 </section>
 
      <section class="contact section-padding pt-0" id="contact">
-      <div class="container">
-        <div class="row">
+  <div class="container">
+    <div class="row">
 
-          <div class="col-lg-6 col-md-6 col-12">
-            <form action="#" method="get" class="contact-form webform"  role="form">
-                
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
+      <div class="col-lg-6 col-md-6 col-12">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form webform" role="form">
 
-                    <label for="cf-name" class="webform-label">Full Name</label>
-                </div>
+          <!-- Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="ae0ef4d5-2c84-4e88-b8d2-650db797d5a2">
 
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
+          <!-- Subject Email -->
+          <input type="hidden" name="subject" value="Pesan Baru dari Website Hypnotherapy Masters">
 
-                  <label for="cf-email" class="webform-label">Your Email</label>
-                </div>
+          <!-- Redirect ke halaman yang sama -->
+          <input type="hidden" name="redirect" value="https://hypnoteraphy-masters.github.io/#contact">
 
-                <div class="form-group d-flex flex-column-reverse">
-                    <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
+          <!-- Anti Spam -->
+          <input type="checkbox" name="botcheck" style="display:none;">
 
-                    <label for="cf-message" class="webform-label">Message</label>
-                </div>
-
-                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
-            </form>
+          <div class="form-group d-flex flex-column-reverse">
+            <input type="text" class="form-control" name="name" id="cf-name" placeholder="Masukkan nama lengkap" required>
+            <label for="cf-name" class="webform-label">Nama Lengkap</label>
           </div>
 
-            <div class="mx-auto col-lg-4 col-md-6 col-12">
-                <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
+          <div class="form-group d-flex flex-column-reverse">
+            <input type="email" class="form-control" name="email" id="cf-email" placeholder="Masukkan alamat email" required>
+            <label for="cf-email" class="webform-label">Alamat Email</label>
+          </div>
 
-                <p class="mb-1">010-020-0340</p>
+          <div class="form-group d-flex flex-column-reverse">
+            <textarea class="form-control" rows="5" name="message" id="cf-message" placeholder="Tuliskan pesan Anda" required></textarea>
+            <label for="cf-message" class="webform-label">Pesan</label>
+          </div>
 
-                <p>
-                    <a href="#">
-                        hello@company.co
-                    <i class="fas fa-arrow-right custom-icon"></i>
-                    </a>
-                </p>
+          <button type="submit" class="form-control" id="submit-button">
+            Kirim Pesan
+          </button>
 
-                <ul class="social-links mt-2">
-                    <li><a href="https://fb.com/tooplate" rel="noopener" class="fab fa-facebook"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-twitter"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-instagram"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-linkedin"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-youtube"></a></li>
-                </ul>
-                
-              <p class="copyright-text mt-5 pt-3">Copyright &copy; 2020 Ben Resume Page</p>
-                
-                <p>Design: <a href="https://www.tooplate.com" title="free HTML templates" target="_blank">Tooplate</a></p>
-            </div>
-
-        </div>
+        </form>
       </div>
-    </section>
+
+      <div class="mx-auto col-lg-4 col-md-6 col-12">
+        <h3 class="my-4 pt-4 pt-lg-0">Hubungi Kami</h3>
+
+        <p class="mb-3">
+          Silakan kirim pertanyaan, konsultasi, atau informasi yang ingin Anda sampaikan melalui formulir di samping.
+        </p>
+
+        <p>
+          <a href="mailto:EMAILKAMU@gmail.com">
+            EMAILKAMU@gmail.com
+            <i class="fas fa-arrow-right custom-icon"></i>
+          </a>
+        </p>
+
+        <ul class="social-links mt-2">
+          <li><a href="#" rel="noopener" class="fab fa-facebook"></a></li>
+          <li><a href="#" rel="noopener" class="fab fa-instagram"></a></li>
+          <li><a href="#" rel="noopener" class="fab fa-youtube"></a></li>
+          <li><a href="#" rel="noopener" class="fab fa-linkedin"></a></li>
+        </ul>
+
+        <p class="copyright-text mt-5 pt-3">
+          Copyright &copy; 2026 Hypnotherapy Masters. All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+  </div>
+     </section>
      <!-- SCRIPTS -->
      <script src="js/jquery.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
